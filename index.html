@@ -99,7 +99,77 @@
 
         </div>
     </section>
+<!-- ==========================================
+         VENTANAS FLOTANTES LATERALES (TIPS)
+         ========================================== -->
+    <!-- Tip Izquierdo: Fontanería -->
+    <div id="tip-izquierdo" class="hidden lg:flex fixed left-4 top-1/3 z-50 w-72 bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl flex-col overflow-hidden transition-all duration-300 transform">
+        <div class="bg-amber-500 px-4 py-2.5 flex justify-between items-center">
+            <span class="text-slate-950 font-black text-xs uppercase tracking-wider"><i class="fa-solid fa-lightbulb mr-1"></i> Quick Home Tip</span>
+            <button onclick="cerrarVentana('tip-izquierdo')" class="text-slate-950 hover:bg-amber-600/50 w-6 h-6 rounded-full flex items-center justify-center font-bold text-sm transition-colors">✕</button>
+        </div>
+        <div class="p-4 space-y-2">
+            <h4 class="font-bold text-amber-500 text-sm">¿Gotera en la llave del baño?</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">El 90% de las veces es solo un empaque gastado. Cierra la llave de paso, desenrosca la manija y cambia la arandela de goma vieja por una nueva para frenar el desperdicio de agua.</p>
+            <a href="#full-tips" class="inline-block text-amber-500 text-[11px] font-bold underline hover:text-amber-400 pt-1">Ver más trucos caseros →</a>
+        </div>
+    </div>
 
+    <!-- Tip Derecho: Drywall -->
+    <div id="tip-derecho" class="hidden lg:flex fixed right-4 top-1/3 z-50 w-72 bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl flex-col overflow-hidden transition-all duration-300 transform">
+        <div class="bg-slate-800 px-4 py-2.5 flex justify-between items-center border-b border-slate-700">
+            <span class="text-amber-500 font-black text-xs uppercase tracking-wider"><i class="fa-solid fa-hammer mr-1"></i> Drywall Hack</span>
+            <button onclick="cerrarVentana('tip-derecho')" class="text-slate-400 hover:text-white w-6 h-6 rounded-full flex items-center justify-center font-bold text-sm transition-colors">✕</button>
+        </div>
+        <div class="p-4 space-y-2">
+            <h4 class="font-bold text-white text-sm">Reparar un agujero pequeño</h4>
+            <p class="text-xs text-slate-400 leading-relaxed">Para huecos de clavos o tornillos en tus paneles de yeso, aplica un poco de pasta resanadora, déjala secar un par de horas y líjala suavemente antes de pintar encima.</p>
+            <a href="#full-tips" class="inline-block text-amber-500 text-[11px] font-bold underline hover:text-amber-400 pt-1">Aprende más aquí →</a>
+        </div>
+    </div>
+
+    <!-- Botón para reabrir las ventanas si el usuario las cerró -->
+    <button id="btn-reabrir-tips" class="hidden fixed bottom-6 left-6 z-50 bg-amber-500 hover:bg-amber-600 text-slate-950 font-black px-4 py-2.5 rounded-full shadow-2xl text-xs items-center gap-2 transition-all uppercase tracking-wider scale-90 hover:scale-100">
+        <i class="fa-solid fa-lightbulb text-sm"></i> Ver Tips Caseros
+    </button>
+
+
+    <!-- ==========================================
+         SECCIÓN EXCLUSIVA: RECOMENDACIONES Y TIPS
+         ========================================== -->
+    <section id="full-tips" class="py-20 bg-slate-900 text-white border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-amber-500 font-extrabold text-sm uppercase tracking-widest">Knowledge Base</span>
+                <h2 class="text-3xl sm:text-4xl font-black tracking-tight">Handyman Tips & Home Recommendations</h2>
+                <p class="text-slate-400 text-base">Pequeñas guías creadas por profesionales para ayudarte a mantener tu hogar en perfectas condiciones y evitar reparaciones costosas en el futuro.</p>
+            </div>
+
+            <!-- Rejilla de Consejos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjeta 1 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800/60 shadow-lg space-y-4">
+                    <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-500 text-xl font-bold">🛠️</div>
+                    <h3 class="text-xl font-bold text-white">Mantenimiento de Puertas</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">¿Puertas que chirrían o raspan el piso? Ajusta los tornillos de las bisagras superiores. Si el ruido persiste, un disparo de lubricante WD-40 resolverá el problema al instante.</p>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800/60 shadow-lg space-y-4">
+                    <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-500 text-xl font-bold">💧</div>
+                    <h3 class="text-xl font-bold text-white">Prevenir Humedades</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Revisa el silicón viejo alrededor de tu bañera o fregadero una vez al año. Volver a calafatear a tiempo evita filtraciones destructivas en las paredes de drywall traseras.</p>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800/60 shadow-lg space-y-4">
+                    <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-500 text-xl font-bold">⚡</div>
+                    <h3 class="text-xl font-bold text-white">Seguridad Eléctrica básica</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Si un tomacorriente se siente flojo al conectar aparatos, no lo ignores. El movimiento interno desgasta los cables y puede provocar un cortocircuito peligroso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- ==========================================
          3. SECCIÓN DEL PROBLEMA DEL CLIENTE
          ========================================== -->
