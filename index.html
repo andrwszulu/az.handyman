@@ -1,12 +1,520 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>az.handyman</title>
+    
+    <!-- SEO Local y Datos Estructurados para Google -->
+    <title>AZ Handyman and Renovation | Premium Home Repairs</title>
+    <meta name="description" content="Professional handyman and renovation services. Licensed & Insured. Drywall repair, painting, and maintenance. Contact us via WhatsApp for a free quote!">
+    
+    <!-- Tailwind CSS para Diseño Moderno 2026 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Tipografía Moderna -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Iconos Profesionales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tu archivo CSS básico -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1> AZ.Handyman</h1>
+<body class="antialiased bg-white text-slate-900">
+
+   <!-- ==========================================
+         1. HEADER & NAVBAR (Optimizado para Tampa)
+         ========================================== -->
+    <header class="w-full sticky top-0 z-50 bg-white shadow-md border-b-4 border-amber-500">
+        <!-- Barra de estado superior: Ahora solo para Tampa -->
+        <div class="bg-slate-950 text-white text-xs py-2.5 px-4">
+            <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+                <div class="flex items-center gap-4 font-medium">
+                    <span><i class="fa-solid fa-shield-check text-amber-500 mr-1"></i> Licensed & Insured</span>
+                    <span><i class="fa-solid fa-bolt text-amber-500 mr-1"></i> Same Day Response</span>
+                </div>
+                <span class="font-semibold text-slate-300">Serving Area: <span class="text-amber-500 font-bold">Tampa</span></span>
+            </div>
+        </div>
+        
+        <!-- Barra de navegación: Logo removido de la izquierda -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-6">
+            
+            <!-- Menú de enlaces (Ahora toma el espacio de la izquierda de forma limpia) -->
+            <nav class="flex flex-wrap justify-center md:justify-start gap-6 font-bold text-slate-800 text-sm w-full md:w-auto">
+                <a href="#" class="hover:text-amber-500 transition-colors">Home</a>
+                <a href="#services" class="hover:text-amber-500 transition-colors">Services</a>
+                <a href="#why-us" class="hover:text-amber-500 transition-colors">About Us</a>
+                <a href="#projects" class="hover:text-amber-500 transition-colors">Projects</a>
+                <a href="#reviews" class="hover:text-amber-500 transition-colors">Reviews</a>
+                <a href="#contact" class="hover:text-amber-500 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Botones de contacto a la derecha -->
+            <div class="flex items-center gap-3 w-full md:w-auto justify-center md:justify-end">
+                <a href="tel:+18136132956" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-5 py-3 rounded-xl text-sm transition-all flex items-center gap-2 border border-slate-700">
+                    <i class="fa-solid fa-phone text-amber-500"></i> 813-613-2956
+                </a>
+                <a href="https://wa.me/18136132956?text=Hello!%20I%20need%20a%20free%20estimate%20from%20AZ%20Handyman%20in%20Tampa." target="_blank" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold px-6 py-3 rounded-xl text-sm transition-all flex items-center gap-2 shadow-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Quote
+                </a>
+            </div>
+        </div>
+    </header>
+   <!-- ==========================================
+         2. HERO SECTION (Diseño Centrado)
+         ========================================== -->
+    <section class="py-16 md:py-24 bg-gradient-to-b from-slate-900 to-slate-950 text-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+            
+            <!-- 1. El Logo posicionado en el centro -->
+            <div class="mb-10 bg-slate-900 p-4 rounded-3xl shadow-2xl border border-slate-800 max-w-sm">
+                <img src="WhatsApp Image 2026-06-04 at 10.00.59 AM.jpeg" alt="AZ Handyman Logo" class="h-80 md:h-80 w-auto object-contain mx-auto drop-shadow-md">
+            </div>
+
+            <!-- 2. Los textos y botones posicionados abajo del logo -->
+            <div class="space-y-6 max-w-3xl">
+                <div class="inline-block bg-amber-500/10 text-amber-500 border border-amber-500/30 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                    ★★★★★ Trusted by Local Homeowners
+                </div>
+                
+                <h1 class="text-2xl sm:text-5xl lg:text-2xl font-extrabold tracking-tight leading-tight">
+                    Reliable <span class="text-amber-500">Handyman & Renovation</span> Services For Your Home
+                </h1>
+                
+                <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto">
+                    Professional repairs, maintenance and full structural remodeling. Fast response. Heavy-duty quality work guaranteed.
+                </p>
+                
+                <!-- Botones de Acción Centrados -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                    <a href="https://wa.me/18136132956?text=Hi,%20I'm%20visiting%20your%20website%20and%20want%20to%20request%20a%20quote." target="_blank" class="w-full sm:w-auto bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold text-base px-8 py-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp Free Estimate
+                    </a>
+                    <a href="tel:+18136132956" class="w-full sm:w-auto bg-transparent hover:bg-white/5 text-white font-bold text-base px-8 py-4 rounded-xl border-2 border-slate-700 shadow-xs transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-phone text-amber-500"></i> 813-613-2956
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         3. SECCIÓN DEL PROBLEMA DEL CLIENTE
+         ========================================== -->
+    <section class="py-20 bg-slate-950 text-white border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Home Repairs Getting Delayed?</h2>
+                <p class="text-slate-400 mt-4 text-base">We help homeowners fix problems quickly without the stress.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all">
+                    <div class="text-amber-500 text-2xl mb-3"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <h3 class="font-bold text-lg mb-1">Broken Drywall</h3>
+                    <p class="text-slate-400 text-sm">Holes and cracks that ruin your walls.</p>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all">
+                    <div class="text-amber-500 text-2xl mb-3"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <h3 class="font-bold text-lg mb-1">Damaged Doors</h3>
+                    <p class="text-slate-400 text-sm">Misaligned or stuck doors and locks.</p>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all">
+                    <div class="text-amber-500 text-2xl mb-3"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <h3 class="font-bold text-lg mb-1">Old Paint</h3>
+                    <p class="text-slate-400 text-sm">Chipping paint and stained wood finishes.</p>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all">
+                    <div class="text-amber-500 text-2xl mb-3"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <h3 class="font-bold text-lg mb-1">Home Maintenance</h3>
+                    <p class="text-slate-400 text-sm">Small structural repairs stacking up.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         4. SERVICIOS
+         ========================================== -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Our Professional Services</h2>
+                <p class="text-slate-600 mt-2">High-end remodeling and handyman solutions for your property.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-xl transition-all">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=400&q=80" alt="Drywall Repair" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="text-amber-500 text-xl"><i class="fa-solid fa-trowel"></i></span>
+                                <h3 class="text-xl font-bold text-slate-900">Drywall Repair</h3>
+                            </div>
+                            <p class="text-slate-600 text-sm">Smooth repairs for holes, cracks and wall damage.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/18136132956?text=I%20need%20help%20with%20Drywall%20Repair." target="_blank" class="w-full text-center bg-slate-950 hover:bg-amber-500 hover:text-slate-950 text-white font-bold py-2.5 rounded-xl text-sm transition-colors block">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-xl transition-all">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=400&q=80" alt="Interior Painting" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="text-amber-500 text-xl"><i class="fa-solid fa-paint-roller"></i></span>
+                                <h3 class="text-xl font-bold text-slate-900">Interior Painting</h3>
+                            </div>
+                            <p class="text-slate-600 text-sm">Clean professional painting with attention to detail.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/18136132956?text=I%20need%20help%20with%20Interior%20Painting." target="_blank" class="w-full text-center bg-slate-950 hover:bg-amber-500 hover:text-slate-950 text-white font-bold py-2.5 rounded-xl text-sm transition-colors block">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-xl transition-all">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1620626011761-996317b69798?auto=format&fit=crop&w=600&q=80" alt="Bathroom Remodeling" class="w-full h-48 object-cover">                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="text-amber-500 text-xl"><i class="fa-solid fa-shower"></i></span>
+                                <h3 class="text-xl font-bold text-slate-900">Bathroom Remodeling</h3>
+                            </div>
+                            <p class="text-slate-600 text-sm">Upgrade your bathroom with quality craftsmanship.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/18136132956?text=I%20need%20help%20with%20Bathroom%20Remodeling." target="_blank" class="w-full text-center bg-slate-950 hover:bg-amber-500 hover:text-slate-950 text-white font-bold py-2.5 rounded-xl text-sm transition-colors block">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-xl transition-all">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=400&q=80" alt="Flooring Installation" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="text-amber-500 text-xl"><i class="fa-solid fa-sheet-plastic"></i></span>
+                                <h3 class="text-xl font-bold text-slate-900">Flooring Installation</h3>
+                            </div>
+                            <p class="text-slate-600 text-sm">Beautiful floors installed correctly.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/18136132956?text=I%20need%20help%20with%20Flooring%20Installation." target="_blank" class="w-full text-center bg-slate-950 hover:bg-amber-500 hover:text-slate-950 text-white font-bold py-2.5 rounded-xl text-sm transition-colors block">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Servicio 5 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-xl transition-all">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400&q=80" alt="Door Repair" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="text-amber-500 text-xl"><i class="fa-solid fa-door-open"></i></span>
+                                <h3 class="text-xl font-bold text-slate-900">Door Repair</h3>
+                            </div>
+                            <p class="text-slate-600 text-sm">Fix alignment, locks and damaged doors.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/18136132956?text=I%20need%20help%20with%20Door%20Repair." target="_blank" class="w-full text-center bg-slate-950 hover:bg-amber-500 hover:text-slate-950 text-white font-bold py-2.5 rounded-xl text-sm transition-colors block">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Servicio 6 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-xl transition-all">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80" alt="General Repairs" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="text-amber-500 text-xl"><i class="fa-solid fa-hammer"></i></span>
+                                <h3 class="text-xl font-bold text-slate-900">General Repairs</h3>
+                            </div>
+                            <p class="text-slate-600 text-sm">Small repairs that make a big difference.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/18136132956?text=I%20need%20help%20with%20General%20Repairs." target="_blank" class="w-full text-center bg-slate-950 hover:bg-amber-500 hover:text-slate-950 text-white font-bold py-2.5 rounded-xl text-sm transition-colors block">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         5. POR QUÉ ELEGIRNOS
+         ========================================== -->
+    <section id="why-us" class="py-20 bg-slate-950 text-white border-y border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Why Choose <span class="text-amber-500">AZ Handyman</span></h2>
+                <p class="text-slate-400">We operate under rigid corporate standards of punctuality, heavy-duty durability, and ultimate protective coverage.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                    <div class="text-amber-500 text-xl mb-2"><i class="fa-solid fa-shield"></i></div>
+                    <h4 class="font-bold text-white">Licensed & Insured</h4>
+                    <p class="text-slate-400 text-sm">Your home is protected.</p>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                    <div class="text-amber-500 text-xl mb-2"><i class="fa-solid fa-clock"></i></div>
+                    <h4 class="font-bold text-white">Fast Response</h4>
+                    <p class="text-slate-400 text-sm">We respect your time.</p>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                    <div class="text-amber-500 text-xl mb-2"><i class="fa-solid fa-star"></i></div>
+                    <h4 class="font-bold text-white">Quality Work</h4>
+                    <p class="text-slate-400 text-sm">Professional results.</p>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                    <div class="text-amber-500 text-xl mb-2"><i class="fa-solid fa-tag"></i></div>
+                    <h4 class="font-bold text-white">Fair Pricing</h4>
+                    <p class="text-slate-400 text-sm">Honest estimates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         6. GALERÍA DE PROYECTOS (Antes / Después)
+         ========================================== -->
+    <section id="projects" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Our Recent Work</h2>
+                <p class="text-slate-600 mt-2">Real heavy-duty transformations.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Proyecto 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+                    <div class="grid grid-cols-2 h-60">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=300&q=80" alt="Before" class="w-full h-full object-cover">
+                            <span class="absolute bottom-2 left-2 bg-slate-950 text-white text-xs font-bold px-2 py-0.5 rounded border border-slate-700">BEFORE</span>
+                        </div>
+                        <div class="relative border-l-2 border-white">
+                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=300&q=80" alt="After" class="w-full h-full object-cover">
+                            <span class="absolute bottom-2 left-2 bg-amber-500 text-slate-950 text-xs font-bold px-2 py-0.5 rounded">AFTER</span>
+                        </div>
+                    </div>
+                    <div class="p-4 border-t border-slate-100">
+                        <h3 class="font-bold text-slate-900 text-lg">Kitchen Repair & Refresh</h3>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+                    <div class="grid grid-cols-2 h-60">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=300&q=80" alt="Before" class="w-full h-full object-cover">
+                            <span class="absolute bottom-2 left-2 bg-slate-950 text-white text-xs font-bold px-2 py-0.5 rounded border border-slate-700">BEFORE</span>
+                        </div>
+                        <div class="relative border-l-2 border-white">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=300&q=80" alt="After" class="w-full h-full object-cover">
+                            <span class="absolute bottom-2 left-2 bg-amber-500 text-slate-950 text-xs font-bold px-2 py-0.5 rounded">AFTER</span>
+                        </div>
+                    </div>
+                    <div class="p-4 border-t border-slate-100">
+                        <h3 class="font-bold text-slate-900 text-lg">Living Room Drywall Fixing</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         7. PROCESO DE TRABAJO
+         ========================================== -->
+    <section class="py-20 bg-slate-950 text-white border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-center mb-16">Our Simple Process</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-5xl font-extrabold text-amber-500 mb-2">01</div>
+                    <h3 class="text-lg font-bold mb-1">Contact Us</h3>
+                    <p class="text-slate-400 text-sm">Send a message via WhatsApp or call us directly.</p>
+                </div>
+                <div>
+                    <div class="text-5xl font-extrabold text-amber-500 mb-2">02</div>
+                    <h3 class="text-lg font-bold mb-1">Free Estimate</h3>
+                    <p class="text-slate-400 text-sm">We evaluate your photos and give a transparent quote.</p>
+                </div>
+                <div>
+                    <div class="text-5xl font-extrabold text-amber-500 mb-2">03</div>
+                    <h3 class="text-lg font-bold mb-1">Schedule Service</h3>
+                    <p class="text-slate-400 text-sm">We choose a day and time that best fits your schedule.</p>
+                </div>
+                <div>
+                    <div class="text-5xl font-extrabold text-amber-500 mb-2">04</div>
+                    <h3 class="text-lg font-bold mb-1">Enjoy Results</h3>
+                    <p class="text-slate-400 text-sm">Your home is fully repaired and improved without stress.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         8. TESTIMONIALS
+         ========================================== -->
+    <section id="reviews" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-center text-slate-900 mb-16">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                    <div class="text-amber-500 text-sm mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-slate-700 italic text-sm">"Great service. They repaired my drywall and painted the room perfectly. Clean and polite professionals."</p>
+                    <p class="font-bold text-slate-900 text-sm mt-4">— Sarah J., Tampa</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                    <div class="text-amber-500 text-sm mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-slate-700 italic text-sm">"They aligned my front door and fixed my locks in less than an hour. Extremely fast and highly responsive."</p>
+                    <p class="font-bold text-slate-900 text-sm mt-4">— Robert M., Tampa</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                    <div class="text-amber-500 text-sm mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-slate-700 italic text-sm">"No hidden costs. Very transparent with the quote on WhatsApp and the craftsmanship is superior."</p>
+                    <p class="font-bold text-slate-900 text-sm mt-4">— Dave L., Tampa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         9 & 10. ÁREA DE SERVICIO & NUESTRA PROMESA
+         ========================================== -->
+    <section class="py-16 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-12">
+            <div>
+                <h3 class="text-xl font-bold text-slate-900 mb-6">Service Locations</h3>
+                <div class="flex flex-wrap justify-center gap-4 text-sm font-semibold text-slate-700">
+                    <span class="bg-white px-4 py-2 rounded-xl border border-slate-200 shadow-2xs"><i class="fa-solid fa-location-dot text-amber-500 mr-1"></i> TP</span>
+                    <span class="bg-white px-4 py-2 rounded-xl border border-slate-200 shadow-2xs"><i class="fa-solid fa-location-dot text-amber-500 mr-1"></i> Orlando</span>
+                    <span class="bg-white px-4 py-2 rounded-xl border border-slate-200 shadow-2xs"><i class="fa-solid fa-location-dot text-amber-500 mr-1"></i> Tampa</span>
+                    <span class="bg-white px-4 py-2 rounded-xl border border-slate-200 shadow-2xs"><i class="fa-solid fa-location-dot text-amber-500 mr-1"></i> Fort Lauderdale</span>
+                </div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-slate-950 text-white p-8 rounded-3xl border-2 border-amber-500 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 text-left">
+                <div>
+                    <h4 class="text-xl font-bold text-amber-500"><i class="fa-solid fa-award mr-2"></i> Our Promise</h4>
+                    <p class="text-slate-300 text-sm mt-1">We stand behind our work and make sure every customer is satisfied. If you aren't happy, we correct it instantly.</p>
+                </div>
+                <a href="https://wa.me/18136132956?text=I%20want%20to%20claim%20my%20free%20estimate." target="_blank" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold text-sm px-6 py-3.5 rounded-xl whitespace-nowrap transition-colors">
+                    Claim Free Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         11. FORMULARIO DE COTIZACIÓN NATIVO
+         ========================================== -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="bg-slate-950 p-8 rounded-3xl border-2 border-slate-900 shadow-xl text-white">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-extrabold text-white">Request Your Estimate</h2>
+                    <p class="text-slate-400 text-sm mt-2">Fill the details below or chat with us directly via WhatsApp.</p>
+                </div>
+
+                <form action="#" method="POST" class="space-y-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Name *</label>
+                            <input type="text" name="name" required class="w-full bg-slate-900 text-white border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Phone *</label>
+                            <input type="tel" name="phone" required class="w-full bg-slate-900 text-white border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-500">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Email Address *</label>
+                        <input type="email" name="email" required class="w-full bg-slate-900 text-white border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Service Needed *</label>
+                        <select name="service" required class="w-full bg-slate-900 text-white border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-500">
+                            <option value="drywall">Drywall Repair</option>
+                            <option value="painting">Interior Painting</option>
+                            <option value="remodeling">Bathroom Remodeling</option>
+                            <option value="flooring">Flooring Installation</option>
+                            <option value="doors">Door Repair</option>
+                            <option value="general">General Repairs</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Message</label>
+                        <textarea name="message" rows="4" class="w-full bg-slate-900 text-white border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-500" placeholder="Tell us about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold py-4 rounded-xl shadow-md transition-colors">
+                        Request Free Estimate
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         12. FOOTER
+         ========================================== -->
+    <footer class="bg-slate-950 text-slate-400 pt-16 pb-28 md:pb-12 border-t-4 border-amber-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+            <div class="space-y-4">
+                <span class="text-lg font-extrabold tracking-tight text-white">AZ<span class="text-amber-500">HANDYMAN</span></span>
+                <p class="text-xs text-slate-500 leading-relaxed">Premium home repair and renovation solutions. Delivering exceptional local craftsmanship across the region.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Our Services</h4>
+                <ul class="text-xs space-y-2.5">
+                    <li>Drywall Repair</li>
+                    <li>Interior Painting</li>
+                    <li>Bathroom Remodeling</li>
+                    <li>Flooring Installation</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Hours & Contact</h4>
+                <p class="text-xs">Mon - Sat: 7:00 AM - 5:00 PM</p>
+                <p class="text-xs mt-2">Call: <a href="tel:+18136132956" class="text-white hover:underline">813-613-2956</a></p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Certifications</h4>
+                <p class="text-xs text-slate-500">License: CRC-12548963</p>
+                <p class="text-xs text-slate-500 mt-1">Fully Bound & Insured up to $2,000,000.</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-900 text-center text-xs text-slate-600 flex flex-col sm:flex-row justify-between gap-4">
+            <p>© 2026 AZ Handyman and Renovation. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         BOTONES FLOTANTES PERSISTENTES (Cromática del Logo)
+         ========================================== -->
+    <!-- Botón Flotante Único de WhatsApp -->
+    <a href="https://wa.me/18136132956?text=Hello!%20I%20need%20a%20free%20quote%20from%20AZ%20Handyman." target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-amber-500 text-slate-950 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-transform border-2 border-slate-950" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Barra de Contacto Móvil (Solo Teléfonos) -->
+    <div class="fixed bottom-0 inset-x-0 bg-slate-950 border-t border-slate-800 p-3 flex sm:hidden justify-between items-center z-50 gap-3 shadow-2xl">
+        <a href="tel:+18136132956" class="flex-1 text-center bg-slate-900 text-white text-sm font-bold py-3 rounded-xl flex items-center justify-center gap-2 border border-slate-800">
+            <i class="fa-solid fa-phone text-amber-500"></i> Call Now
+        </a>
+        <a href="https://wa.me/18136132956?text=Hello!%20I%20want%20to%20book%20a%20handyman%20service." target="_blank" class="flex-1 text-center bg-amber-500 text-slate-950 text-sm font-extrabold py-3 rounded-xl flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+    </div>
+
 </body>
 </html>

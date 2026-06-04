@@ -1,0 +1,30 @@
+/* Estilos Básicos Personalizados - AZ Handyman */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #0f172a;
+  background-color: #ffffff;
+}
+
+/* Compensación inferior en móvil debido a la barra de acción */
+@media (max-width: 640px) {
+  footer {
+    padding-bottom: 7rem;
+  }
+}
+
+/* Transición premium para tarjetas */
+.bg-white, .bg-slate-900 {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+              border-color 0.3s ease;
+}
+
+/* Efecto Hover Industrial usando el amarillo/dorado de tu marca */
+.bg-white:hover {
+  transform: translateY(-4px);
+  border-color: #f59e0b; /* Borde ámbar/amarillo al pasar el cursor */
+}
