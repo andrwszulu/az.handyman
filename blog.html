@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZ Handyman & Renovation | Expert Blog & Home Advice</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Vinculamos tu archivo de estilos para mantener el tipo de letra del logo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-white min-h-screen flex flex-col justify-between">
+
+    <!-- NAV BAR (Cabecera simplificada para volver al inicio) -->
+    <header class="w-full bg-slate-900 border-b-4 border-amber-500 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <a href="index.html" class="flex items-center gap-2 font-logo text-xl text-white tracking-tight">
+                <span class="text-amber-500">AZ</span> HANDYMAN BLOG
+            </a>
+            <nav class="flex items-center gap-6 font-bold text-sm">
+                <a href="index.html" class="text-slate-300 hover:text-amber-500 transition-colors"><i class="fa-solid fa-arrow-left mr-1"></i> Back to Main Site</a>
+                <a href="index.html#contact" class="bg-amber-500 hover:bg-amber-600 text-slate-950 px-4 py-2 rounded-full font-black transition-all">Get a Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO DEL BLOG (Basado en la estructura de image_7ea1db.png) -->
+    <section class="relative py-20 bg-gradient-to-b from-slate-900 to-slate-950 border-b border-slate-900 overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <span class="text-amber-500 font-extrabold text-xs uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full">Knowledge & Insights</span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-tight font-logo text-white">
+                Expert Insights in <span class="text-amber-500">Home Care</span>
+            </h1>
+            <p class="text-slate-400 text-base max-w-2xl mx-auto">
+                Consejos prácticos, guías de reparación rápida y recomendaciones directas de profesionales para ayudarte a mantener y mejorar el valor de tu hogar.
+            </p>
+            
+            <!-- Barra de búsqueda estética -->
+            <div class="max-w-md mx-auto relative mt-4">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-slate-500">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input type="text" placeholder="Buscar artículos o guías..." class="w-full bg-slate-900/80 border border-slate-800 rounded-xl pl-10 pr-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-amber-500 transition-colors placeholder-slate-500">
+            </div>
+        </div>
+    </section>
+
+    <!-- REJILLA DE ARTÍCULOS (Basado en la estructura de image_7ea199.png) -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-grow w-full">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Artículo 1 -->
+            <article class="bg-slate-900 border border-slate-800/60 rounded-2xl shadow-xl overflow-hidden flex flex-col group hover:border-amber-500/30 transition-all">
+                <div class="relative h-48 bg-slate-800 overflow-hidden">
+                    <div class="absolute top-3 left-3 z-10 flex gap-2">
+                        <span class="bg-amber-500 text-slate-950 text-[10px] font-black uppercase px-2 py-0.5 rounded">★ Destacado</span>
+                        <span class="bg-blue-600 text-white text-[10px] font-bold uppercase px-2 py-0.5 rounded">Drywall</span>
+                    </div>
+                    <!-- Imagen representativa -->
+                    <div class="w-full h-full flex items-center justify-center text-slate-600 bg-gradient-to-br from-slate-800 to-slate-900 text-4xl font-bold group-hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-hammer text-amber-500/20 text-6xl"></i>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-4 text-xs text-slate-400">
+                            <span><i class="fa-solid fa-user mr-1 text-amber-500"></i> AZ Expert</span>
+                            <span><i class="fa-solid fa-calendar mr-1"></i> June 2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-amber-500 transition-colors">10 tareas esenciales de mantenimiento de drywall</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed line-clamp-3">
+                            Prepara los paneles de tu hogar y detecta filtraciones o grietas críticas antes de que se conviertan en reparaciones costosas.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-1.5">
+                        <span class="text-[10px] bg-slate-950 text-slate-400 px-2 py-0.5 rounded-md">Mantenimiento</span>
+                        <span class="text-[10px] bg-slate-950 text-slate-400 px-2 py-0.5 rounded-md">Prevención</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artículo 2 -->
+            <article class="bg-slate-900 border border-slate-800/60 rounded-2xl shadow-xl overflow-hidden flex flex-col group hover:border-amber-500/30 transition-all">
+                <div class="relative h-48 bg-slate-800 overflow-hidden">
+                    <div class="absolute top-3 left-3 z-10 flex gap-2">
+                        <span class="bg-amber-500 text-slate-950 text-[10px] font-black uppercase px-2 py-0.5 rounded">★ Destacado</span>
+                        <span class="bg-emerald-600 text-white text-[10px] font-bold uppercase px-2 py-0.5 rounded">Mejoras</span>
+                    </div>
+                    <div class="w-full h-full flex items-center justify-center text-slate-600 bg-gradient-to-br from-slate-800 to-slate-900 text-4xl font-bold group-hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-faucet text-amber-500/20 text-6xl"></i>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-4 text-xs text-slate-400">
+                            <span><i class="fa-solid fa-user mr-1 text-amber-500"></i> AZ Expert</span>
+                            <span><i class="fa-solid fa-calendar mr-1"></i> June 2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-amber-500 transition-colors">Tendencias modernas en remodelación de interiores</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed line-clamp-3">
+                            Descubre los acabados y estructuras de marcos metálicos que están transformando la organización de espacios comerciales y residenciales este año.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-1.5">
+                        <span class="text-[10px] bg-slate-950 text-slate-400 px-2 py-0.5 rounded-md">Diseño</span>
+                        <span class="text-[10px] bg-slate-950 text-slate-400 px-2 py-0.5 rounded-md">Tendencias</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artículo 3 -->
+            <article class="bg-slate-900 border border-slate-800/60 rounded-2xl shadow-xl overflow-hidden flex flex-col group hover:border-amber-500/30 transition-all">
+                <div class="relative h-48 bg-slate-800 overflow-hidden">
+                    <div class="absolute top-3 left-3 z-10 flex gap-2">
+                        <span class="bg-slate-800 text-slate-400 text-[10px] font-bold uppercase px-2 py-0.5 rounded">Plomería</span>
+                    </div>
+                    <div class="w-full h-full flex items-center justify-center text-slate-600 bg-gradient-to-br from-slate-800 to-slate-900 text-4xl font-bold group-hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-droplet text-amber-500/20 text-6xl"></i>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-4 text-xs text-slate-400">
+                            <span><i class="fa-solid fa-user mr-1 text-amber-500"></i> AZ Expert</span>
+                            <span><i class="fa-solid fa-calendar mr-1"></i> May 2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-amber-500 transition-colors">Cómo evitar filtraciones destructivas en baños</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed line-clamp-3">
+                            Aprende a revisar los sellos de silicón y el estado de las válvulas de paso para frenar humedades ocultas tras los muros de yeso.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-1.5">
+                        <span class="text-[10px] bg-slate-950 text-slate-400 px-2 py-0.5 rounded-md">Home Care</span>
+                        <span class="text-[10px] bg-slate-950 text-slate-400 px-2 py-0.5 rounded-md">Seguridad</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- FOOTER SIMPLE -->
+    <footer class="bg-slate-900 text-slate-500 text-center py-6 border-t border-slate-800 text-xs">
+        <p>&copy; 2026 AZ Handyman & Renovation. All Rights Reserved. Serving Tampa, Miami & Orlando.</p>
+    </footer>
+
+</body>
+</html>
