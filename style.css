@@ -2,18 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap');
 
 h1, .font-logo {
-    font-family: 'Montserrat', 'Impact', 'Arial Black', sans-serif !important;
+    font-family: 'Teko', 'Impact', 'Arial Black', sans-serif !important;
     font-weight: 900 !important;
     letter-spacing: -0.02em !important;
     text-transform: uppercase;
 }
+.font-impact {
+    font-family: 'Impact', 'Arial Black', sans-serif !important;
+}
 
 h3 {
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Teko', 'Impact', 'Arial Black', sans-serif !important;
     font-weight: 800 !important;
     letter-spacing: 0.02em !important;
     color: #f59e0b !important;
     text-transform: uppercase;
+}
+/* Controlar el tamaño y tipo de letra de todo el menú superior */
+nav a {
+    font-family: 'Teko', 'Impact', 'Arial Black', sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 18px !important;
+    text-transform: uppercase !important;
 }
 /* ... El resto de tus estilos viejos siguen aquí abajo sin tocar ... *//* Estilos Básicos Personalizados - AZ Handyman */
 html {
